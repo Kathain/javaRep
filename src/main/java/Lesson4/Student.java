@@ -1,55 +1,51 @@
 package Lesson4;
 
 public class Student {
-        int numTicket;
-        String firstName;
-        String lastName;
-        int yearLesson;
-        int avMathRating;
-        int avEconRating;
-        int avForeignRating;
-                    }
+    int numberStud;
+    String nameStud;
+    String surnameStud;
+    int year;
+    double ratingMath;
+    double ratingEkonomik;
+    double getRatingEnglish;
+}
 
-
-                    class StudentTest {
+class StudentTest{
     public static void main(String[] args) {
+        Student stud1 = new Student();
+        Student stud2 = new Student();
+        Student stud3 = new Student();
 
+        stud1.numberStud = 1;
+        stud1.nameStud = "Ivan";
+        stud1.surnameStud = "Kulikov";
+        stud1.year = 2003;
+        stud1.ratingMath = 3.8;
+        stud1.ratingEkonomik = 4.3;
+        stud1.getRatingEnglish = 4.6;
 
+        stud2.numberStud = 2;
+        stud2.nameStud = "Kola";
+        stud2.surnameStud = "Onohin";
+        stud2.year = 2007;
+        stud2.ratingMath = 4.7;
+        stud2.ratingEkonomik = 3.2;
+        stud2.getRatingEnglish = 3.8;
 
-        Student Iwanow = new Student();
-        Student Allianin = new Student();
-        Student Kikin = new Student();
+        stud3.numberStud = 3;
+        stud3.nameStud = "Nikita";
+        stud3.surnameStud = "Kohin";
+        stud3.year = 2005;
+        stud3.ratingMath = 3.5;
+        stud3.ratingEkonomik = 4.8;
+        stud3.getRatingEnglish = 4.4;
 
-        Iwanow.avMathRating = 3;
-        Iwanow.avEconRating = 5;
-        Iwanow.avForeignRating = 4;
-
-        Allianin.avMathRating = 5;
-        Allianin.avEconRating = 4;
-        Allianin.avForeignRating = 5;
-
-        Kikin.avMathRating = 4;
-        Kikin.avEconRating = 2;
-        Kikin.avForeignRating = 4;
-
-        double balanceIwanowRating = Iwanow.avEconRating + Iwanow.avForeignRating + Iwanow.avMathRating;
-        double balanceAllianinRating = Allianin.avEconRating + Allianin.avMathRating + Allianin.avForeignRating;
-        double balanceKikinRating = Kikin.avEconRating + Kikin.avForeignRating + Kikin.avMathRating;
-
-        System.out.println("Iwanow ocenka srednya - " + balanceIwanowRating / 3);
-        System.out.println("Allianin ocenka srednya - " + balanceAllianinRating / 3);
-        System.out.println("Kikin ocenka srednya - " + balanceKikinRating / 3);
-
-
+        System.out.println("Srednya ocenka Kolokova: " + (stud1.getRatingEnglish + stud1.ratingEkonomik + stud1.ratingMath)/3);
+        System.out.println("Srednya ocenka Onohina: " + (stud2.getRatingEnglish + stud2.ratingEkonomik + stud2.ratingMath)/3);
+        System.out.println("Srednya ocenka Kohina: " + (stud3.getRatingEnglish + stud3.ratingEkonomik + stud3.ratingMath)/3);
 
 
 
 
     }
-
-
-
-
-
 }
-
