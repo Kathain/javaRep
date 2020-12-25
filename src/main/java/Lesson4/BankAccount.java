@@ -6,7 +6,7 @@ public class BankAccount {        //BankAccount это название клас
     double balance;  //этот класс используется как шаблон банковского счета
 
     double popolnenieScheta(double summaPopolnenia) {
-        balance+= summaPopolnenia;
+        balance+=summaPopolnenia;
         return balance;
     }
 
@@ -51,8 +51,12 @@ class BankAccountTest{   //а тут уже проводятся операци�
         HisAccount.balance = 18.76;
 
         System.out.println(MyAccount.name);
-        YourAccount.popolnenieScheta(150);
+
+        MyAccount.popolnenieScheta(150);
         MyAccount.ShowinfoBalance();
+
+        YourAccount.snyatieSoScheta(909.22);
+        YourAccount.ShowinfoBalance();
 
     }
 
