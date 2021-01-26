@@ -4,7 +4,7 @@ public class Car {
     String color;  // имеет 3 переменные наш класс
     String engine;
     static int count; // count будет считать количество машин которые мы создали в конструкторе
-    Car(String color2, String engine2){ //создаю конструктор
+    public Car(String color2, String engine2){ //создаю конструктор
         count++;
         color = color2;
         engine = engine2;
